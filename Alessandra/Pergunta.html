@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta</title>
+    <style>
+        body{
+            background-color: rgb(226, 161, 174);
+            color: rgb(56, 52, 52);
+            font: normal 15px;
+        }
+                
+    </style>
+</head>
+<body>
+    <h1>Qual o nome do seu namorado?</h1>
+    <input type="text" value="" id="name">
+    <input type="button" value="Testar" onclick="clicar()">
+    <div id="res">
+
+    </div>
+</div>
+    
+    <script>
+        function clicar() {
+            var ts1 = window.document.querySelector("input#name")
+            var res = window.document.querySelector('div#res') 
+            var nome = String(ts1.value)
+
+            
+            if (nome == 'Gustavo'){
+                res.innerHTML = `<p>Acerto mizeravi.</p>`
+            }else{
+                res.innerHTML = `<p>NÂO <strong>ACREDITOOOOOOOO</strong>. Como vc pode fazer isso comigo.</p>
+                    <p> Poxa Ale, Eu te amo tanto, não pensei que vc iria colocar outro nome aqui.</p>
+                    <p><strong>T_T</strong></p>`
+            }        
+                
+
+
+        }
+    </script>
+
+</body>
+</html>

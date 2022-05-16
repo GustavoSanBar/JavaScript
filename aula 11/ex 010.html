@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro</title>
+    <style>
+        body{
+            background-color: black;
+            color: red;
+            font: normal 12pt Arial;
+            text-align: center;
+        }
+        input#pais{
+            width: 150px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Você mora no Brasil ou nos Estados?</h1>
+    <input type="text" value="" id="pais">
+    <input type="button" value="Verificar" onclick="Verificar()">
+    <div id="res"></div>
+<script>
+    function Verificar(){
+        var ts1 = window.document.querySelector("input#pais")
+        var res = window.document.querySelector('div#res')
+        var resp = String(ts1.value)
+        if(resp == 'Brasil'){
+            res.innerHTML = `<p>Você mora no ${resp}, logo você é um <strong>Brasileiro</strong>.</p>`
+        } else{
+            res.innerHTML = `<p>Você mora no ${resp}, logo é </strong>estrangeiro</strong> </p>`
+        }
+        if (resp == 'Estados Unidos'){
+            res.innerHTML = `<p>Você mora nos ${resp}, logo você é um <strong>Americano</strong>.</p>`
+        }
+        
+    }
+</script>
+</body>
+</html>

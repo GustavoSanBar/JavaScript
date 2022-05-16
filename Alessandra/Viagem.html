@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagem</title>
+    <style>
+        body{
+            background-color: darkslategrey;
+            color: black;
+            font: normal 12pt Arial;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Roteiro da viagem com meu AMOR</h1>
+    <input type="button" value="SEXTA" onclick="sexta()"> <input type="button" value="SABADO" onclick="sabado()"> <input type="button" value="DOMINGO" onclick="domingo()">
+    <div id="res"></div>
+    <script>
+        function sexta(){
+            res.innerHTML = `
+            <p><strong>25/02/2022</strong></p>
+            <p><strong>Manhã</strong></p>
+            <p>Museu da AMAM</p>
+
+
+
+            <p><strong>Almoço</strong></p>
+            <p>Shopping Terras da Finlândia - Penedo</p>
+
+            <p><strong>14h</strong></p>
+            <p>Check-in</p>
+
+            <p><strong>15h/16h</strong></p>
+            <p> Pequena Finlândia - Penedo</p>
+
+            <p><strong>18h</strong></p>
+            <p>Choperia Torneiras Tap House - Penedo</p> `
+
+        }
+        function sabado(){
+            res.innerHTML = `
+            <p><strong>26/02/2022</strong></p>
+            <p><strong>Manhã</strong></p>
+            Serrinha do Alambari - Penedo
+
+            <p><strong>Almoço</strong></p>
+            Koskenkorva 4,8 de 141 avaliações
+
+            <p><a href <strong> https://www.google.com/maps/dir/Resende+Inn+Hotel,+R.+Sebastião+José+Rodrigues,+136+-+Campos+Elíseos,+Resende+-+RJ,+27542-070/Koskenkorva+Penedo+-+Av.+das+Mangueiras,+1746+-+Penedo,+Itatiaia+-+RJ,+27580-000/@-22.4524099,-44.5216183,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x9e7e90163a6cef:0xa7b3139d7b1999cb!2m2!1d-44.4472948!2d-22.4644952!1m5!1m1!1s0x9e7970a62e8865:0x2793abc304191277!2m2!1d-44.5256904!2d-22.4382533!3e0 </strong></a></p>
+
+            <p><strong>14h</strong></p>
+            Cachoeira das Três Bacias - Penedo
+
+            <p><strong>18h</strong></p>
+            Black Bar Resende 4,4 de 384 avaliações
+            <p><a href <strong>https://www.google.com/maps/dir/Resende+Inn+Hotel+-+Rua+Sebastião+José+Rodrigues+-+Campos+Elíseos,+Resende+-+RJ/Black+Bar+Resende/@-22.4641006,-44.4485173,17z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x9e7e90163a6cef:0xa7b3139d7b1999cb!2m2!1d-44.4472948!2d-22.4644952!1m5!1m1!1s0x9e7e8560faf335:0x828ee26e2d42cee3!2m2!1d-44.4451937!2d-22.4638616 </strong></a></p>
+            `
+        }
+        function domingo(){
+            res.innerHTML = `
+            <p><strong>27/02/2022</strong></p>
+            <p><strong>Manhã</strong></p>
+            Poço das Esmeraldas - Penedo
+
+            <p><strong>ALMOÇO</strong></p>
+            Di Napoli - Pasta & Pizza 4,8 de 581 avaliações
+            <p><a href <strong> https://www.google.com/maps/dir/Resende+Inn+Hotel+-+Rua+Sebastião+José+Rodrigues+-+Campos+Elíseos,+Resende+-+RJ/Di+Napoli+-+Pasta+e+Pizza/@-22.3344744,-44.5462005,13z/data=!4m13!4m12!1m5!1m1!1s0x9e7e90163a6cef:0xa7b3139d7b1999cb!2m2!1d-44.4472948!2d-22.4644952!1m5!1m1!1s0x9e65131734ab3f:0xb771725908a19b95!2m2!1d-44.5298756!2d-22.3246452 </strong></a></p>
+
+
+            <p><strong> 14h </strong></p>
+            Cachoeira da Fumaça - Resende
+            Check-out
+
+
+            `
+        }
+    </script>
+</body>
+</html>
